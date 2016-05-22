@@ -22,8 +22,6 @@ class ePOSDocument(object):
 
         exml = ET.Element("epos-print", {"xmlns":"http://www.epson-pos.com/schemas/2011/03/epos-print"})
         for obj in self.line_items:
-            print "line:" + str(obj.get_text())
-            print "tag: " + str(obj.get_tag())
             o = ET.SubElement(exml, tag=obj.get_tag(), attrib=obj.get_attr())
             txt = obj.get_text()
             if txt is not None:
