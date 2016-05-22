@@ -31,7 +31,7 @@ project_root = os.path.dirname(cwd)
 # version is used.
 sys.path.insert(0, project_root)
 
-import epos-xml
+import eposxml
 
 # -- General configuration ---------------------------------------------
 
